@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #EDA25E;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+/*banner*/
+
+.name {
+    background-image: url(https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    color: rgb(230, 220, 200);
+    width: 49%;
+    box-shadow: 2px -2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.name h1,
+p {
+    margin-left: 10px;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.established {
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.historia {
+    color: #EDA25E;
+}
+
+.menu {
+    background-color: #171B1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 2px -2px 4px 4px rgba(0, 0, 0, 0.5);
+    outline: 2px solid rgba(105, 124, 139, 0.2);
+    outline-offset: -2em;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #EDA25E;
+}
+
+.nomeca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu h1 {
+    color: #EDA25E;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section {
+    width: 80%;
+}
+
+hr {
+    background-color: rgb(230, 220, 200);
+    border-color: rgb(230, 220, 200);
+}
+
+.flavor,
+.dessert {
+    text-align: left;
+    width: 75%;
+    color: rgb(230, 220, 200);
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.price {
+    text-align: right;
+    width: 50%;
+    color: #EDA25E;
+    font-family: "Klee One", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ICONS */
+.nomeca .bx {
+    font-size: 2.5em;
+    color: #EDA25E;
+    margin-top: 11px;
+    margin-left: 20px;
+}
+
+.icon-cafe {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.icon-cafe .bx {
+    font-size: 1.8em;
+    color: #EDA25E;
+    margin-left: auto;
+    margin-top: 17px;
+}
+
+.icon-cookie {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.cookie .bx {
+    font-size: 1.8em;
+    color: #EDA25E;
+    margin-left: auto;
+    margin-top: 17px;
+}
+
+/* FOOTER */
+.visita {
+    background-image: url(https://images.pexels.com/photos/6563313/pexels-photo-6563313.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+}
+
+.address {
+    margin-bottom: 5px;
+    color: rgb(230, 220, 200);
+}
+
+.assign {
+    margin-bottom: 5px;
+    color: rgb(230, 220, 200);
+}
+
+.caixinha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3em;
+    background-color: #EDA25E;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+
+a {
+    color: #171B1E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #A45826;
+}
+
+.caixinha {
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.caixinha:visited {
+    color: rgb(20, 20, 20);
+}
+
+.caixinha:hover {
+    transform: scale(1.05)
+}
+
+.caixinha:active {
+    color: rgb(20, 20, 20);
+    transform: scale(1.0)
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .name {
+        background-image: url(https://i.im.ge/2024/11/07/kv9fpS.cafe-expandido.jpeg);
+        background-size: cover;
+        background-position: 0px;
+        width: 100%;
+        align-items: center;
+        height: 20vh;
+    }
+
+    .name h1,
+    p {
+        margin-top: 3px;
+    }
+
+    .name h1 {
+        font-size: 1.6em;
+    }
+
+    .name p {
+        font-size: 0.5em;
+    }
+
+    .menu {
+        outline-offset: -0.5em;
+        height: 80vh;
+    }
+
+    .nomeca .bx {
+        font-size: 1.11em;
+        color: #EDA25E;
+        margin-top: 4px;
+        margin-left: 9px;
+    }
+
+    .cookie .bx {
+        font-size: 1.1em;
+        color: #EDA25E;
+        margin-left: auto;
+        margin-top: 1.4em;
+    }
+
+    .icon-cafe .bx {
+        font-size: 1.1em;
+        color: #EDA25E;
+        margin-left: auto;
+        margin-top: 1.4em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+
+    .menu h2,
+    .flavor {
+        margin-right: 1em;
+
+    }
+
+    .flavor,
+    .dessert {
+        width: 75%;
+        text-align: left;
+    }
+
+    .price {
+        width: 25%;
+        text-align: right;
+    }
+
+    .item p {
+        font-size: 0.8em;
+    }
+
+    .visita {
+        height: 15vh;
+    }
+
+    .address {
+        font-size: 0.8em;
+    }
+
+    .assign {
+        font-size: 0.8em;
+    }
+
+    .caixinha {
+        padding: 1px;
+    }
+}
